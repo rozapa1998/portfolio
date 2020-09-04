@@ -1,139 +1,105 @@
-h1{
-    color: #E20000;
-    font-weight:bolder;
-    margin-left: 20px;
-    padding: 175px 0px 30px 0px;
-    font-size: 50px;
-}
-
-.row{
-    margin-right: auto;
-}
-
-.bot{
-margin-left: auto;
-padding: 300px 0px 10px 0px;
-}
-
-a{
-    text-decoration: underline none;
-}
-#contacto{
-    background-image: url("../images/contacto-fondo.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-a:hover{
-    text-decoration: underline #E20000;
-    color: white;
-}
-
-p{
-    color: gray;
-    margin-left: 250px;
-    font-size: 20px;
-}
-
 body{
     font-family: 'Montserrat', sans-serif;
 }
-
+h1{
+    color: #E20000;
+}
+p{
+    color: #6A6A6A;
+}
+#proyectos{
+    background-image: url(../images/fondo-proyectos.png);
+    background-size: 100%;
+}
+#proyectos main{
+    height: 83vh;
+}
+#contacto{
+    background-image: url(../images/fondo-contacto.png);
+    background-size: 100%;
+}
+#contacto main{
+    height: 83vh;
+}
+input, textarea{
+    border-radius: 15px !important;
+    border: 0px !important;
+}
+textarea{
+    height: 150px !important;
+    resize: none;
+}
 nav .nav-link{
     color: #282828;
 }
-
-.nav-link:hover{
-    background-color: #E20000;
-    color: white;
-    border-radius: 20px;
-}
-
 nav .active{
     border: 1px solid #E20000;
-    border-radius: 30px;
-}
-
-.nav-item{
-    padding: 0px 80px 0px 0px;
-}
-
-
-.navbar-nav{
-    font-size: 20px;
-    font-weight: bolder;
-}
-
-.whatsapp{
-    position: fixed 20px;
-}
-
-
-.form-control{
-    width: 400%;
-}
-
-.sombra{
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-.cv{
-    color: #E20000;
-    border: #E20000 solid;
+    font-size: 15px;
     border-radius: 20px;
-    background-color: #E20000;
-    font-weight: bolder;
-    margin-right: -180px;
+    padding: 5px 20px;
+    font-weight: 100;
 }
-
-.boton{
-    color: blueviolet;
+footer, footer a{
+    color: white;
+    font-weight: 100;
+    font-size: 14px;
+}
+footer .fa-whatsapp{
+    color: white;
+    background-color: #370A6D;
+    font-size: 30px;
+    padding: 10px 19px;
+    border-radius: 10px 10px 0 0;
+    height: 65px;
+    width: 65px;
+}
+footer .fa-github{
+    font-size: 30px;
+    color: white;
+}
+footer .fa-linkedin-in{
+    color: #ff4a49;
     background-color: white;
-    border: 1px;
-    border-radius: 100px;
-    padding: 10px 60px;
-    font-weight: bolder;
+    font-size: 20px;
+    border: 0px;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    padding: 8px 0 0 0;
+    border-radius: 80px;
+    margin: 0 8px;
 }
-
-.container{
-    margin-left: 210px;
-    margin-right:auto;
-}
-
-
-textarea{
-    resize: none;
-}
-
-i{
-    font-size: 40px;
-}
-
-.mi{
+#proyectos footer, #proyectos footer a{
     color: #E20000;
 }
-
-.contact{
-    color: white
+#proyectos footer .fa-github{
+    font-size: 30px;
+    color: #E20000;
 }
-
-#sobre-mi{
-    background-image: url("../images/sobre-mi-fondo.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
+#proyectos footer .fa-linkedin-in{
+    color: white;
     background-color: #E20000;
 }
-
-.en-linea{
-display: flex;
+.btn{
+    background-color: #FFFFFF;
+    color: #370A6D;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 5px 35px;
 }
-
-.tecnologias{
-    background-color: white;
+.btn:hover{
+    color: #FFFFFF;
+    background-color: #370A6D;
 }
-
-.fondo-rojo{
- background-color: #E20000;
- background-size: 100%;
- margin-left: 0px;
- margin-right: 0px ;
+.btn-pdf{
+    background-color: #E20000;
+    color: white;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 5px 20px;
+    font-weight: 100;
+}
+.btn-pdf:hover{
+    text-decoration: underline;
 }
