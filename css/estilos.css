@@ -129,3 +129,9 @@ footer .fa-linkedin-in{
         background-position-x: 0;
     }
 }
+
+.graiente{
+    background: rgb(97,0,0);
+    background: linear-gradient(90deg, rgba(97,0,0,1) 0%, rgba(121,9,9,1) 11%, rgba(255,0,0,1) 76%, rgba(147,1,1,1) 100%); 
+
+}
