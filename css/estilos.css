@@ -130,8 +130,29 @@ footer .fa-linkedin-in{
     }
 }
 
-.graiente{
+.gradiente{
     background: rgb(97,0,0);
     background: linear-gradient(90deg, rgba(97,0,0,1) 0%, rgba(121,9,9,1) 11%, rgba(255,0,0,1) 76%, rgba(147,1,1,1) 100%); 
+    width: unset;
 
+}
+/*Color y tamaño de letra h2*/
+.blanco{
+color: #FFFFFF;
+font-size: 22px;
+}
+
+#proyectos{
+    background-image: url(../images/sobre-mi-fondo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.abajo{
+    margin-top: 50px;
+}
+
+.whapp{
+    position: fixed;
+    text-align: right !important;
 }
