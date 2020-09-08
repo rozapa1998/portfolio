@@ -10,7 +10,11 @@ p{
 }
 #sobre-mi{
     background-image: url("../images/sobre-mi-fondo.png");
-     background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#tecnologias{
+    
 }
 #proyectos{
     background-image: url("../images/sobre-mi-fondo.png");
@@ -137,4 +141,30 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b82514', end
 }
 .btn-pdf:hover{
     text-decoration: underline;
+}
+.img-circle {
+    margin: 1em auto;
+    display: block;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+h3{
+    font-size: 14px ;
+    font-weight: 300;
+    color: #282828    ;
+}
+
+.idioma{
+    color: white;
+    font-size: 80px;
+}
+
+#sobre-mi .card{
+    height: 182px;
+}
+
+#idiomas .card{
+    background-color: #370A6D;
 }
