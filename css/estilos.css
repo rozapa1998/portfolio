@@ -25,6 +25,16 @@ p{
     background-repeat: no-repeat;
     background-size: 100%;
 }
+
+
+#index{
+background-image: url("../images/");
+background-size: 100%;
+background-repeat: no-repeat;
+}
+
+
+
 #contacto main{
     height: 83vh;
 }
@@ -229,3 +239,14 @@ color: #E20000;
     right: 30px;
 }
 
+#index footer .fa-github{
+    font-size: 30px;
+    color: #FFFFFF;
+}
+#index footer .fa-linkedin-in{
+    color: white;
+    background-color: #E20000;
+}
+#index footer a{
+color: #FFFFFF;
+}
