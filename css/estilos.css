@@ -1,3 +1,4 @@
+                                                                                /*Estilos HTML*/
 body{
     font-family: 'Montserrat', sans-serif;
 }
@@ -8,14 +9,14 @@ p{
     color: #6A6A6A;
     font-size: 16px;
 }
-input, textarea{
-    border-radius: 15px !important;
-    border: 0px !important;
+h3{
+    font-size: 14px ;
+    font-weight: 300;
+    color: #282828    ;
 }
-textarea{
-    height: 150px !important;
-    resize: none;
-}
+
+
+                                                                            /*Estilos Barra navegacion*/
 nav .nav-link{
     color: #282828;
 }
@@ -26,11 +27,9 @@ nav .active{
     padding: 5px 20px;
     font-weight: 100;
 }
-footer, footer a{
-    color: white;
-    font-weight: 100;
-    font-size: 14px;
-}
+
+
+                                                                                /*Estilos Footer*/
 footer .fa-whatsapp{
     color: white;
     background-color: #370A6D;
@@ -63,17 +62,6 @@ footer .fa-linkedin-in{
     border-radius: 80px;
     margin: 0 8px;
 }
-.btn-pdf:hover{
-    text-decoration: underline;
-}
-
-
-h3{
-    font-size: 14px ;
-    font-weight: 300;
-    color: #282828    ;
-}
-
 
 
                                                                             /*Estilos CONTACTO*/
@@ -85,6 +73,22 @@ h3{
     background-image: url("../images/fondo-contacto.png");
     background-repeat: no-repeat;
     background-size: 100%;
+}
+#contacto input, textarea{
+    border-radius: 15px !important;
+    border: 0px !important;
+}
+#contacto textarea{
+    height: 150px !important;
+    resize: none;
+}
+#contacto footer, footer a{
+    color: white;
+    font-weight: 100;
+    font-size: 14px;
+}
+#contacto .btn-pdf:hover{
+    text-decoration: underline;
 }
 
                                                                             /*Estilos PROYECTOS*/
@@ -346,6 +350,33 @@ color: #FFFFFF;
 }
 #index{
     background-image: url("../images/fondo-index.png");
-    background-size: 100%;
+    background-size: 80%;
     background-repeat: no-repeat;
     }
+
+
+#index ::placeholder{
+    font-size: 30px;
+}
+
+.mitad{
+    margin-top: 600px;
+}
+.src{
+    padding: 9px 10px 9px 32px;
+    outline: none;
+    font-size: 18px;
+    border-radius: 30px;
+    color: gray;
+    border: 2px solid black;
+    background-image: url("../images/search-solid.svg");
+    background-repeat: no-repeat;
+    background-position-x: 920px;
+    background-position-y:2px ;
+    background-size: 40px;
+    width: 88%;
+}
+
+.abajo{
+    margin-top: 90px;
+}
