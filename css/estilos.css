@@ -15,7 +15,6 @@ h3{
     color: #282828    ;
 }
 
-
                                                                             /*Estilos Barra navegacion*/
 nav .nav-link{
     color: #282828;
@@ -89,6 +88,11 @@ footer .fa-linkedin-in{
 }
 #contacto .btn-pdf:hover{
     text-decoration: underline;
+}
+
+#contacto .btn-pdf{
+    background-color: #E20000;
+    color: #FFFFFF;
 }
 
                                                                             /*Estilos PROYECTOS*/
@@ -342,8 +346,7 @@ color: #FFFFFF;
     color: #FFFFFF;
 }
 #index footer .fa-linkedin-in{
-    color: white;
-    background-color: #E20000;
+    background-color: white;
 }
 #index footer a{
 color: #FFFFFF;
@@ -351,9 +354,11 @@ color: #FFFFFF;
 #index{
     background-image: url("../images/fondo-index.png");
     background-size: 80%;
-    background-repeat: no-repeat;
-    }
-
+    background-repeat: no-repeat;   
+}
+.blanco{
+    color: white;
+}
 
 #index ::placeholder{
     font-size: 30px;
@@ -367,16 +372,18 @@ color: #FFFFFF;
     outline: none;
     font-size: 18px;
     border-radius: 30px;
-    color: gray;
-    border: 2px solid black;
+    color:white;
+    border: 2px solid white;
     background-image: url("../images/search-solid.svg");
     background-repeat: no-repeat;
     background-position-x: 920px;
     background-position-y:2px ;
     background-size: 40px;
     width: 88%;
+    background: none;
 }
 
 .abajo{
     margin-top: 90px;
 }
+
