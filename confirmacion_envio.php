@@ -1,3 +1,9 @@
+<?php
+include_once ("PHPMailer/src/PHPMailer.php");
+include_once ("PHPMailer/src/SMTP.php");
+$pg = "contacto";
+
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -53,35 +59,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 mt-sm-5">
-                    <h1>Contacto</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6 col-12 mt-4">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nihil, dolore dolor veritatis,
-                        asperiores nemo fuga quos soluta facilis excepturi magnam cupiditate itaque assumenda nam quae
-                        delectus aut similique perferendis.</p>
-                </div>
-                <div class="col-sm-6 col-12 mt-4">
-                    <form action="" method="POST">
-                        <div class="mb-3">
-                            <input type="text" id="txtNombre" name="txtNombre" class="form-control shadow"
-                                placeholder="Nombre">
-                        </div>
-                        <div class="mb-3">
-                            <input type="email" id="txtCorreo" name="txtCorreo" class="form-control shadow"
-                                placeholder="Correo">
-                        </div>
-                        <div class="mb-3">
-                            <textarea name="txtMensaje" id="txtMensaje" class="form-control shadow"></textarea>
-                        </div>
-                    </form>
-                    <div class="text-right">
-                        <button type="submit" class="btn">ENVIAR</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+                    <h1>Gracias por contactarte, te respondere en la brevedad!</h1>
     </main>
     <footer>
         <div class="container">

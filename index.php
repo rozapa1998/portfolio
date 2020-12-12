@@ -1,3 +1,6 @@
+<?php
+$pg = "Inicio"
+?>
 <!DOCTYPE html>
 <html lang="es">
 

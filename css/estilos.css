@@ -212,33 +212,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b82514', end
     font-size: 80px;
 }
 
-#idiomas .card2{
+.violet{
+    color: #fff;
+    font-size: 100px;
     background-color: #370A6D;
-    border-radius: 20px;
-    margin-left: 15px;
-    margin-top: 2px;
 }
+
+
 .fondo{
     background:whitesmoke;
-}
-
-
-#idiomas .card{
-    border-radius: 20px;
-    width: 550px
-}
-
-.margen-idiomas{
-    margin-left: 175px;
-
-}
-.idiomas-f{
-    font-weight: bold;
-    font-size: 17px;
-}
-.mover{
-    position: relative;
-    right: 30px;
 }
 
                                                                             /*Estilos Experiencia(Sobre-mi)*/

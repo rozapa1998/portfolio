@@ -1,3 +1,6 @@
+<?php
+$pg = "sobre-mi"
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -207,40 +210,26 @@
         <section id="idiomas" class="fondo">
             <div class="container pt-4 pb-4">
                 <div class="row">
-                    <div class="col-sm-5 col-12 ">
-                        <div class="container">
-                            <div class="row card shadow">
-                                <div class="col-sm-4 mover">
-                                    <i class="fas fa-comment-alt card2 idioma p-5"></i>
-                                </div>
-                                <div class="col-sm-6 ml-5">
-                                    <h3 class="idiomas-f pt-4"> IDIOMAS</h3>
-                                    <p>INGLÉS - AVANZADO</p>
-                                    <p>ESPAÑOL - NATIVO</p>
-                                </div>
-                            </div>
+                    <div class="col-6">
+                        <div class="card shadow">
+                            
+
                         </div>
                     </div>
-                    <div class="p-5">
+                    <div class="col-6">
+                        <div class="card shadow">
 
-                    </div>
-
-                    <div class="col-sm-5 col-12">
-                        <div class="container">
-                            <div class="row card shadow">
-                                <div class="col-sm-4 mover">
-                                    <i class="fas fa-star card2 idioma p-5"></i>
-                                </div>
-                                <div class="col-sm-6 ml-5">
-                                    <h3 class="idiomas-f pt-4"> HOBBIES</h3>
-                                    <p>PROGRAMAR</p>
-                                    <p>Diseño de niveles (Unreal Engine 4)</p>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+        
+        
+        
+        
+        
+    
         </section>
 
         <!--Experiencia Laboral-->
