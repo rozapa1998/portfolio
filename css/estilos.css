@@ -1,371 +1,590 @@
-                                                                                /*Estilos HTML*/
-body{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
     font-family: 'Montserrat', sans-serif;
 }
-h1{
-    color: #E20000;
-}
-p{
-    color: #6A6A6A;
-    font-size: 16px;
-}
-h3{
-    font-size: 14px ;
-    font-weight: 300;
-    color: #282828    ;
+
+h1 {
+    color: #e20000;
+    font-weight: bold;
 }
 
-                                                                            /*Estilos Barra navegacion*/
-nav .nav-link{
-    color: #282828;
+#contacto p, #proyectos p, #sobre-mi main p {
+    color: #6a6a6a;
+    /*padding-right: 90px;
+    padding-top: 20px;*/
 }
-nav .active{
-    border: 1px solid #E20000;
+
+@media (max-width: 576px) {
+    .navbar-toggler {
+        background-color: transparent;
+        border-color: rgba(133, 0, 0, 0.425);
+    }
+}
+
+header .descarga-cv, #sobre-mi .descarga-cv {
+    color: white;
+    border: 1px solid red;
+    background: #e20000;
     font-size: 15px;
-    border-radius: 20px;
-    padding: 5px 20px;
-    font-weight: 100;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#proyectos header .descarga-cv {
+    background: #e20000;
+}
+
+header .descarga-cv:hover, #proyectos header .descarga-cv:hover, #sobre-mi header .descarga-cv:hover {
+    color: black;
+    text-decoration-line: none;
+    border: 1px solid red;
+    background: white;
 }
 
 
-                                                                                /*Estilos Footer*/
-footer .fa-whatsapp{
-    color: white;
-    background-color: #370A6D;
-    font-size: 40px;
-    padding: 10px 19px;
-    border-radius: 10px 10px 0 0;
-    display: block;
-    width: 73px;
-    height: 70px;
-    color: #fff;
-    position: fixed;
-    right: 120px;
-    bottom: -3px;
-    text-align: center;
-    z-index: 999;
-}
-footer .fa-github{
-    font-size: 30px;
-    color: white;
-}
-footer .fa-linkedin-in{
-    color: #ff4a49;
-    background-color: white;
-    font-size: 20px;
-    border: 0px;
-    height: 32px;
-    width: 32px;
-    text-align: center;
-    padding: 8px 0 0 0;
-    border-radius: 80px;
-    margin: 0 8px;
-}
-
-
-                                                                            /*Estilos CONTACTO*/
-
-#contacto main{
-    height: 83vh;
-}
-#contacto{
+#contacto {
     background-image: url("../images/fondo-contacto.png");
     background-repeat: no-repeat;
-    background-size: 100%;
-}
-#contacto input, textarea{
-    border-radius: 15px !important;
-    border: 0px !important;
-}
-#contacto textarea{
-    height: 150px !important;
-    resize: none;
-}
-#contacto footer, footer a{
-    color: white;
-    font-weight: 100;
-    font-size: 14px;
-}
-#contacto .btn-pdf:hover{
-    text-decoration: underline;
+    background-size: cover;
 }
 
-#contacto .btn-pdf{
-    background-color: #E20000;
-    color: #FFFFFF;
-}
-
-                                                                            /*Estilos PROYECTOS*/
-
-#proyectos p{
-    font-size: 14px;
-    height: 105px;
-}
-#proyectos img{
-    height: 177px;
-}
-.color-gradiente{
-background: rgba(184,37,20,1);
-background: -moz-linear-gradient(left, rgba(184,37,20,1) 0%, rgba(214,52,30,1) 47%, rgba(240,47,23,1) 70%, rgba(240,47,23,1) 100%);
-background: -webkit-gradient(left top, right top, color-stop(0%, rgba(184,37,20,1)), color-stop(47%, rgba(214,52,30,1)), color-stop(70%, rgba(240,47,23,1)), color-stop(100%, rgba(240,47,23,1)));
-background: -webkit-linear-gradient(left, rgba(184,37,20,1) 0%, rgba(214,52,30,1) 47%, rgba(240,47,23,1) 70%, rgba(240,47,23,1) 100%);
-background: -o-linear-gradient(left, rgba(184,37,20,1) 0%, rgba(214,52,30,1) 47%, rgba(240,47,23,1) 70%, rgba(240,47,23,1) 100%);
-background: -ms-linear-gradient(left, rgba(184,37,20,1) 0%, rgba(214,52,30,1) 47%, rgba(240,47,23,1) 70%, rgba(240,47,23,1) 100%);
-background: linear-gradient(to right, rgba(184,37,20,1) 0%, rgba(214,52,30,1) 47%, rgba(240,47,23,1) 70%, rgba(240,47,23,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b82514', endColorstr='#f02f17', GradientType=1 );
-}
-.btn{
-    background-color: #FFFFFF;
-    color: #370A6D;
-    font-weight: 500;
-    font-size: 16px;
-    border-radius: 20px;
-    padding: 5px 35px;
-}
-.btn:hover{
-    color: #FFFFFF;
-    background-color: #370A6D;
-}
-.btn-rojo{
-    background-color: #E20000;
-    color: white;
-    font-size: 15px;
-    border-radius: 20px;
-    padding: 5px 20px;
-    font-weight: 100;
-}
-.link-rojo{
-    color: #E20000;
-    font-size: 15px;
-}
-
-#proyectos footer, #proyectos footer a{
-    color: #E20000;
-}
-#proyectos footer .fa-github{
-    font-size: 30px;
-    color: #E20000;
-}
-#proyectos footer .fa-linkedin-in{
-    color: white;
-    background-color: #E20000;
-}
-#proyectos h2{
-    font-size: 16px;
-    text-transform: uppercase;
-    color: white;
-    padding: 0px;
-    margin: 0px;
-}
-
-#proyectos{
-    background-image: url("../images/sobre-mi-fondo.png");
+#proyectos {
+    background-image: url("../images/fondo-proyectos.png");
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
-                                                                            /*Estilos SOBRE-MI*/
+@media (max-width: 576px) {
+    #proyectos {
+        background-image: url("../images/fondo-proyectos.png");
+        background-repeat: no-repeat;
+        background-size: 105%;
+    }
 
-#sobre-mi footer a{
-    color: #E20000;
+    #contacto {
+        background-image: url("../images/fondo-contacto.png");
+        background-repeat: no-repeat;
+        background-size: 105%;
+        background-position-y: bottom;
+    }
 }
 
-.img-circle {
-    margin: 1em auto;
-    display: block;
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 50%;
-}
-#sobre-mi footer .fa-github{
-    font-size: 30px;        
-    color: #E20000;
- }
+/*#contacto main, #proyectos main, #sobre-mi main {
+    padding-top: 4%;
+}*/
 
-#sobre-mi footer .fa-linkedin-in{
+header nav ul li {
+    /*padding-right: 70px;*/
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.pie {
+    /*position: absolute;
+    left: 48.3%;
+    top: 100%;
+    transform: translate(-50%, -100%);
+    width: 100%;*/
+    font-size: 15px;
+    font-style: normal;
+    /*padding-bottom: 10px;*/
+}
+
+#contacto footer a, #inicio footer a {
     color: white;
-    background-color: #E20000;
- }
-
-#sobre-mi .redes{
-    font-size: 30px;
-    color: #E20000;
 }
 
-#sobre-mi .card{
-    height: 182px;
+#proyectos footer a, #sobre-mi footer a, #respuesta-contacto footer a {
+    color: red;
 }
 
-#sobre-mi .img-fluid{
-    max-width: 125%;
+#proyectos .iconos i, #sobre-mi .iconos i {
+    color: red;
 }
 
-#sobre-mi{
-    background-image: url("../images/sobre-mi-fondo.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-
-                                                                            /*Estilos idioma (Sobre-mi)*/
-.idioma{
+#contacto .iconos i, #inicio .iconos i {
     color: white;
-    font-size: 80px;
 }
 
-.violet{
-    color: #fff;
-    font-size: 100px;
+#contacto .destacado {
+    text-decoration-line: underline;
+}
+
+.iconos i {
+    font-size: 29px;
+    /*margin-right: 6px;*/
+}
+
+.fa-whatsapp {
+    font-size: 42px;
+    position: fixed;
+    right: 3%;
+    bottom: 0px;
     background-color: #370A6D;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    color: white;
 }
 
+@media (max-width: 576px) {
+    .fa-whatsapp {
+        font-size: 36px;
+        position: initial;
+        right: 18px;
+        bottom: 0px;
+        background-color: transparent;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        color: #e20000;
+    }
 
-.fondo{
-    background:whitesmoke;
+    #inicio .fa-whatsapp {
+        color: white;
+    }
 }
 
-                                                                            /*Estilos Experiencia(Sobre-mi)*/
-
-#experiencia .img-fluid{
-    max-width: 150%;
+nav .nav-link {
+    background-color: none;
+    color: #282828;
+    /*padding: 3px 0 0 0;*/
+    text-align: center;
+    width: 100px;
+    height: 32px;
 }
 
-#experiencia p{
-    font-size: 12px;
+nav .nav-link:hover {
+    border: 1px solid #e20000;
+    border-radius: 120px;
+    background-color: #e20000;
+    color: white;
 }
 
-#experiencia li{
-    font-size: 12px;
+nav .active {
+    border: 1px solid #e20000;
+    border-radius: 120px;
 }
 
-#experiencia .card{
-    height: 270px;
-    width: 550px;
-    border-radius: 20px;
+nav .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.7%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
 }
 
-#experiencia .btn{
-    font-size: 12px;
-margin-top: 230px;
-margin-left: -70px;
-background-color: #370A6D;
-color: #FFFFFF;
+/*@media (min-width: 768px) {
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding: 3px 0 0 0;
+    }
+}*/
+
+.container input, .container textarea, main .g-recaptcha {
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.158);
+    border-radius: 10px;
+    border: none;
 }
 
-#experiencia h3{
-    color: #6A6A6A;
-    font-weight: bold;
+::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    /*padding: 8px;*/
 }
 
-.text-violet{
-    color: #370A6D !important;
-    font-weight: bolder;
+input::placeholder, textarea::placeholder {
+    color: #1818186c !important;
 }
 
-#experiencia li{
-    color: #6A6A6A;
+/*.container input::placeholder, .container textarea::placeholder { preguntar por qué no toma el color de la fuente en el placeholder y sí acá
+    color: #1818186c;
+}*/
+
+.container input:focus, .container textarea:focus {
+    background-color: rgba(240, 241, 241, 0.938);
 }
 
-#experiencia .maletin{
+.btn {
+    background-color: white;
+    border-radius: 30px;
     color: #370A6D;
-    font-size: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    /*padding: 10px 55px;*/
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.199);
 }
 
-                                                                            /*Estilos Estudios (Sobre-mi)*/
-
-#estudios .img-fluid{
-    max-width: 150%;
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.884);
+    color: rgb(35, 33, 49);
 }
 
-#estudios p{
-    font-size: 12px;
+.contacto-main {
+    height: 88vh;
 }
 
-#estudios li{
-    font-size: 12px;
+@media (max-width: 576px) {
+    .contacto-main {
+        height: auto;
+    }
 }
 
-#estudios .card{
-    height: 270px;
-    width: 550px;
-    border-radius: 20px;
+/*fin contacto*/
+
+/*comienzo proyectos*/
+
+#proyectos img {
+    /*margin: 13px 10px 10px 10px;*/
+    box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.342);
 }
 
-#estudios .btn{
-    font-size: 12px;
-margin-top: 230px;
-margin-left: -70px;
-background-color: #E20000;
-color: #FFFFFF;
+#proyectos .btn {
+    color: white;
+    background-color: #e20000;
+    /*padding: 8px 17px;*/
+    font-size: 11px;
+    /*margin-top: 10%;
+    margin-bottom: 17px;*/
+    width: 133px;
 }
 
-#estudios h3{
-    color: #6A6A6A;
-    font-weight: bold;
+#proyectos .btn:hover {
+    background-color: #9b0000;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.486);
 }
 
-.text-red{
-    color: #E20000 !important;
-    font-weight: bolder;
+#proyectos .code {
+    color: #e20000;
+    background-color: white;
+    box-shadow: none;
 }
 
-#estudios li{
-    color: #6A6A6A;
+#proyectos .code:hover {
+    background-color: #6a6a6a;
+    color: white;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.486);
 }
 
-#estudios .graduacion{
-    color: #E20000;
-    font-size: 50px
-}
-
-#estudios .red{
-    color: #E20000;
-}
-
-                                                                            /*Estilos INDEX*/
-
-#index footer .fa-github{
-    font-size: 30px;
-    color: #FFFFFF;
-}
-#index footer .fa-linkedin-in{
+#proyectos .div {
+    border-radius: 15px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.199);
+    /*margin: 30px 0px 0px 0;
+    padding: 0 0 60px 0;*/
+    text-align: center;
+    max-width: min-content;
     background-color: white;
 }
-#index footer a{
-color: #FFFFFF;
+
+/*#proyectos .bloque {
+    display: flex;
+    justify-content: space-between;
+}*/
+
+.div h2 {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.438), #e20000);
+    background-color: #e20000;
+    text-align: left;
 }
-#index{
-    background-image: url("../images/fondo-index.png");
-    background-size: 80%;
-    background-repeat: no-repeat;   
+
+.div .btn-group {
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
-.blanco{
+
+#proyectos .div p {
+    text-align: left;
+}
+
+#proyectos .destacado {
+    text-decoration-line: underline;
+}
+
+#proyectos footer, #contacto footer, #inicio footer {
+    position: relative;
+}
+
+#respuesta-contacto footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+#contacto footer {
+    top: 25px;
+}
+
+#proyectos footer {
+    top: 35px;
+}
+
+#inicio footer {
+    top: 10px;
+}
+
+@media (max-width: 576px) {
+    #contacto footer {
+        position: unset;
+    }
+
+    #contacto footer a, #contacto .fa-whatsapp {
+        color: black;
+    }
+
+    #contacto .iconos i {
+        color: #e20000;
+    }
+}
+
+/*fin proyectos proyectizados*/
+
+
+/*comienzo del inicio*/
+
+#inicio main .bloque-inicio {
+    height: 80vh;
+}
+
+#inicio {
+    background-image: url("../images/fondo-home.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -180px;
+    background-position-x: 0;
+}
+
+@media (max-width: 576px) {
+    #inicio {
+        background-position-y: 0px;
+        background-position-x: -416px;
+    }
+
+    #inicio footer {
+        position: initial;
+    }
+}
+
+#inicio main .destacado {
+    text-decoration-line: underline;
+}
+
+#inicio .search {
+    border-radius: 30px;
+    border: 1px solid white;
+}
+
+#inicio h1 {
+    color: white;
+    font-weight: 400;
+    font-size: 27px;
+    text-align: center;
+}
+
+#inicio .fa-search {
+    font-size: 40px;
     color: white;
 }
 
-#index ::placeholder{
-    font-size: 30px;
+@media (max-width: 576px) {
+    #inicio .fa-search {
+        font-size: 27px;
+    }
 }
 
-.mitad{
-    margin-top: 600px;
+@media (max-width:576px) {
+    #inicio h1 {
+        color: white;
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+    }
 }
-.src{
-    padding: 9px 10px 9px 32px;
-    outline: none;
-    font-size: 18px;
-    border-radius: 30px;
-    color:white;
-    border: 2px solid white;
-    background-image: url("../images/search-solid.svg");
+
+/*@media (max-width:10px) {
+    #inicio h1 {
+        font-size: 20px;
+    }
+}*/
+
+/*fin del inicio*/
+
+/*sobre mi*/
+
+#sobre-mi .main {
+    background-image: url("../images/fondo-proyectos.png");
     background-repeat: no-repeat;
-    background-position-x: 920px;
-    background-position-y:2px ;
-    background-size: 40px;
-    width: 88%;
-    background: none;
+    background-size: cover;
+    /*padding-bottom: 100px;*/
 }
 
-.abajo{
-    margin-top: 90px;
+#sobre-mi .main main img:hover {
+    transform:scale(1.01);
 }
 
+@media (max-width: 576px) {
+    #sobre-mi .main img {
+        width: 75%;
+    }
+
+    #sobre-mi .main {
+        background-size: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    #sobre-mi .main img {
+        width: 85%;
+    }
+}
+
+#sobre-mi main .descarga-cv {
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+#sobre-mi .iconos i {
+    font-size: 53px;
+}
+
+.tecnologias {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.336), #e20000);
+    background-color: #e20000;
+}
+
+@media (max-width: 576px) {
+    
+    .tecnologias .col-6 {
+        max-width: 47%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    
+    .tecnologias .col-6 {
+        max-width: 50%;
+    }
+
+}
+
+/*@media (max-width: 1024px) {
+    
+    .tecnologias .col-6 {
+        max-width: 52%;
+    }
+
+}*/
+
+.tecnologias h2 {
+    color: white;
+    font-weight: 500;
+}
+
+#sobre-mi .tecnologias p {
+    text-align: center;
+}
+
+.card {
+    border-radius: 20px;
+}
+
+.personal, .estudios {
+    background-color: #ededed;
+}
+
+.personal i {
+    color: white;
+    background-color: #370a6d;
+    font-size: 67px;
+    border-radius: 20px;
+}
+
+@media (max-width: 576px) {
+
+    .personal .fa-comment-alt {
+        width: 109.5%;
+    }
+
+}
+
+.bg-white {
+    border-radius: 20px;
+    box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.199);
+}
+
+.descr {
+    color: #282828;
+}
+
+.descr h3 {
+    font-weight: bold;
+}
+
+.laboral svg, .estudios svg {
+    font-size: 22px;
+}
+
+.laboral .descr h4, .estudios .descr h4 {
+    color: #6a6a6a;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.laboral .descr h5, .estudios .descr h5 {
+    color: #370a6d;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.estudios .descr h5 {
+    color: #e20000;
+}
+
+.laboral .descr h6, .estudios .descr h6 {
+    color: #6a6a6a;
+    font-size: 15px;
+}
+
+.laboral .descr li, .estudios .descr li {
+    font-size: 15px;
+}
+
+.laboral .title, .estudios .title {
+    color: #370a6d;
+    font-size: 70px;
+    font-weight: 500;
+}
+
+.laboral .btn, .estudios .btn {
+    color: white;
+    background-color: #370a6d;
+    font-size: 13px;
+}
+
+.estudios .btn {
+    background-color: #e20000;
+}
+
+.estudios .title {
+    color: #e20000;
+}
+
+#sobre-mi .footer {
+    background-color: #ededed;
+}
+
+#sobre-mi .iconos i {
+    font-size: 29px;
+}
+
+/*fin sobre mi*/

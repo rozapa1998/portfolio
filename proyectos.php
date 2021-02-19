@@ -1,148 +1,80 @@
 <?php
-$pg = "proyectos"
+    $pg = "proyectos";
 ?>
+
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos</title>
+    <title>Proyectos | Mi Portfolio</title>
     <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="css/fontawesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100,200,300,400,500,600,700,800.900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
-    <script src="css/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="css/bootstrap/js/bootstrap.min.js"></script>
     <script src="css/bootstrap/js/bootstrap.bundle.min.js"></script>
 </head>
-
 <body id="proyectos">
-    <header>
-        <div class="container">
-        <nav class="navbar navbar-expand-md px-0">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item pr-5">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item pr-5">
-                        <a class="nav-link" href="sobre-mi.html">Sobre mí</a>
-                    </li>
-                    <li class="nav-item pr-5">
-                        <a class="nav-link active" href="proyectos.html">Proyectos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
-                <div class="form-inline my-2 my-lg-0">
-                    <a href="files/Cv Rodrigo Zapata.pdf" target="_blank" class="btn btn-rojo">Descargar mi CV <i class="fas fa-download"></i></a>
+    <div class="container proyectos-main">
+        <header>
+            <?php include_once("menu.php"); ?>
+        </header>
+        <main class="container">
+            <div class="row pt-2 pt-sm-4 mb-3 mb-sm-0">
+                <div class="col-sm-7 col-12">
+                    <h1>Mis proyectos</h1>
+                    <div class="my-2 mt-sm-4 mb-sm-5">
+                        <p>Estos son algunos de los trabajos que desarrolle durante mi curso de programacion, para mas de mis trabajos podes visitar mi github!<br>
+                    </div>
                 </div>
             </div>
-        </nav>
-        </div>
-    </header>
-    <main>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 mt-sm-5">
-                    <h1>Proyectos</h1>
+            <div class="row justify-content-around">
+                <div class="col-sm-4 col-12 p-0 pb-5 mb-4 mb-sm-0 div">
+                    <img src="images/abm.png" class="m-3">
+                    <h2 class="pl-3 py-3">ABM CLIENTES</h2>
+                    <p class="pl-3 pr-4 pt-2">Alta, Baja, modificación de un registro de clientes empleando:. Realizado en HTML, CSS, PHP, Bootstrap y Json.</p>
+                    <div class="btn-group mb-3">
+                        <div class="col-6">
+                            <a href="" target="_blank" class="btn">VER ONLINE</a>
+                        </div>
+                        <div class="col-6">
+                            <a href="https://github.com/rozapa1998/abmClientes" target="_blank" class="btn code" >CÓDIGO FUENTE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-12 p-0 pb-5 mb-4 mb-sm-0 div">
+                    <img src="images/sgv.png" class="m-3">
+                    <h2 class="pl-3 py-3">SISTEMA DE GESTIÓN DE VENTAS</h2>
+                    <p class="pl-3 pr-4 pt-2">Sistema de gestión de clientes, productos y ventas. Realizado en HTML, CSS, PHP, MVC, Bootstrap, Js, Ajax, jQuery y MySQL de base de datos.</P>
+                    <div class="btn-group mb-3">
+                        <div class="col-6">
+                        <a href="" target="_blank" class="btn">VER PROYECTO</a>
+                        </div>
+                        <div class="col-6">
+                            <a href="https://github.com/rozapa1998/abmVentas" target="_blank" class="btn code" >CÓDIGO FUENTE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-12 p-0 pb-5 mb-4 mb-sm-0 mt-lg-4 mt-xl-0 div">
+                    <img src="images/pi.png" class="m-3">
+                    <h2 class="pl-3 py-3">PROYECTO INTEGRADOR</h2>
+                    <p class="pl-3 pr-4 pt-2">Proyecto Full Stack desarrollado en PHP, Laravel, Javascript, jQuery, AJAX, HTML, CSS, con panel administrador, gestor de usuarios, módulo de permisos y funcionalidades a fines.</p>
+                    <div class="btn-group mb-3">
+                        <div class="col-6">
+                            <button type="submit" class="btn">VER PROYECTO</button>
+                        </div>
+                        <div class="col-6">
+                            <button type="submit" class="btn code">CÓDIGO FUENTE</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-6 col-12 mt-4">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nihil, dolore dolor veritatis, asperiores nemo fuga quos soluta facilis excepturi magnam cupiditate itaque assumenda nam quae delectus aut similique perferendis.</p>
-                </div>
-            </div>
-            <div class="row">
-            	<div class="col-sm-4 col-12">
-            		<div class="row card m-1">
-            			<img src="images/abmclientes.png" alt="ABM Clientes" title="ABM Clientes" class="img-fluid">
-            			<div class="col-12 color-gradiente py-3">
-            				<h2>ABM Clientes</h2>
-            			</div>
-            			<div class="col-12 py-3">
-            			<p>Alta, baja y modificación de un registro de clientes. Realizado en HTML, CSS, PHP, Bootstrap y Json.</p>
-            			</div>
-            			<div class="row p-3 pb-0">
-	            			<div class="col-6">
-	            				<a href="https://nelsontarche.com.ar/sistema/abmclientes/" class="btn btn-rojo" target="_blank">Ver online</a>
-	            			</div>
-	            			<div class="col-6">
-	            				<a href="https://github.com/depcsuite/abmclientes" class="link-rojo" target="_blank">Código fuente</a>
-	            			</div>
-            			</div>
-            		</div>
-            	</div>
-            	<div class="col-sm-4 col-12">
-            		<div class="row card m-1">
-            			<img src="images/abmventas.png" alt="Sistema de Gestión de Ventas" title="Sistema de Gestión de Ventas" class="img-fluid">
-            			<div class="col-12 color-gradiente py-3">
-            				<h2>Sistema de gestión de ventas</h2>
-            			</div>
-            			<div class="col-12 py-3">
-            				<p>Sistema de gestión de clientes, productos y ventas. Realizado en HTML, CSS, PHP, MVC, Bootstrap, Js, Ajax, jQuery y MySQL de base de datos.</p>
-            			</div>
-            			<div class="row p-3 pb-0">
-	            			<div class="col-6">
-	            				<a href="" class="btn btn-rojo" target="_blank">Ver online</a>
-	            			</div>
-	            			<div class="col-6">
-	            				<a href="https://github.com/" class="link-rojo" target="_blank">Código fuente</a>
-	            			</div>
-            			</div>
-            		</div>
-            	</div>
-            	<div class="col-sm-4 col-12">
-            		<div class="row card m-1">
-            			<img src="images/sistema-admin.png" alt="Proyecto" title="Proyecto" class="img-fluid">
-            			<div class="col-12 color-gradiente py-3">
-            				<h2>Proyecto integrador</h2>
-            			</div>
-            			<div class="col-12 py-3">
-            				<p>Proyecto Full Stack desarrollado en PHP, Laravel, Javascript, jQuery, AJAX, HTML, CSS, Mercadopago con panel administrador, gestor de usuarios, módulo de permisos y funcionalidades a fines.</p>
-            			</div>
-            			<div class="row p-3 pb-0">
-	            			<div class="col-6">
-	            				<a href="https://nelsontarche.com.ar/sistema/abmclientes/" class="btn btn-rojo" target="_blank">Ver online</a>
-	            			</div>
-	            			<div class="col-6">
-	            				<a href="https://github.com/depcsuite/abmclientes" class="link-rojo" target="_blank">Código fuente</a>
-	            			</div>
-            			</div>
-            		</div>
-            	</div>
-
-            </div>
-
-        </div>
-    </main>
-    <footer>
-        <div class="container">
-            <div class="row mt-5">
-                <div class="col-sm-3 col-12 text-sm-left text-center pb-sm-0 pb-3">
-                    <a href="https://github.com" target="_blank" title="Github"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-                <div class="col-sm-3 col-12 text-sm-left text-center pb-sm-0 pb-3">
-                        Sponsor <a href="https://depcsuite.com" target="_blank" title="DEPCSUITE">DePC Suite</a>
-                </div>
-                <div class="col-sm-3 col-12 text-sm-left text-center pb-sm-0 pb-3">
-                    <a href="mailto:rodrigo1998.rz@gmail.com">rodrigo1998.rz@gmail.com</a>
-                </div>
-                <div class="col-sm-3 col-12 text-right">
-                    <a href="https://api.whatsapp.com/send?phone=541168165044" target="_blank" title="Whatsapp"><i class="fab fa-whatsapp"></i></a>
-                </div>
-
-            </div>
-        </div>
+        </main>
+    </div>
+    <footer class="container">
+        <?php include_once("footer.php"); ?>
     </footer>
 </body>
-
 </html>

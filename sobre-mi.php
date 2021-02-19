@@ -1,434 +1,363 @@
 <?php
-$pg = "sobre-mi"
+    $pg = "sobre-mi";
 ?>
-<!DOCTYPE html>
-<html lang="es">
 
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos</title>
+    <title>Sobre mi | Mi portfolio</title>
     <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="css/fontawesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100,200,300,400,500,600,700,800.900&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
-    <script src="css/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="css/bootstrap/js/bootstrap.min.js"></script>
     <script src="css/bootstrap/js/bootstrap.bundle.min.js"></script>
 </head>
-
 <body id="sobre-mi">
-    <header>
+    <div class="main">
         <div class="container">
-            <nav class="navbar navbar-expand-md px-0">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item pr-5">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item pr-5">
-                            <a class="nav-link active" href="sobre-mi.html">Sobre mí</a>
-                        </li>
-                        <li class="nav-item pr-5">
-                            <a class="nav-link" href="proyectos.html">Proyectos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                    <div class="form-inline my-2 my-lg-0">
-                        <a href="files/Cv Rodrigo Zapata.pdf" target="_blank" class="btn btn-rojo">Descargar mi CV <i class="fas fa-download"></i></a>
+            <header>
+                <?php include_once("menu.php"); ?>
+            </header>
+            <main class="container pb-4 pb-sm-5">
+                <div class="row pb-0 pb-sm-5">
+                    <div class="col-sm-6 col-12 mb-5 mb-sm-0">
+                        <h1>Sobre mi</h1>
+                        <p class="mb-5 mt-4">Hola, mi nombre es Rodrigo tengo 22 años, soy un desarrollador web y programador de juegos, dentro de esta pagina te mostrare cuales son mis aptitudes.</p>
+                        <div class="row">
+                            <div class="col-4 iconos">
+                                <a href="https://github.com/rozapa1998" target="_blank" title="Github"><i class="fab fa-github mr-2"></i></a>
+                                <a href="https://ar.linkedin.com/" target="_blank" title="Linkedin"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                            <div class="col-8 text-left align-self-center">
+                                <a href="files/CV.txt" download="CV Rodrigo.txt" class="descarga-cv rounded-pill px-2 px-sm-4 py-2 py-sm-3">DESCARGÁ MI CV</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-12 text-center">
+                        <img src="images/yo.png" alt="" style="filter: drop-shadow(5px 5px 10px #444);">
                     </div>
                 </div>
-            </nav>
+            </main>
         </div>
-    </header>
-    <main>
-        <div class="container pb-5">
-            <div class="row">
-                <div class="col-sm-5 col-12 mt-4">
-                    <h1 class="mt-sm-4 pb-sm-4">Sobre mí</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde velit id tenetur voluptatem.
-                        Aliquam exercitationem soluta possimus accusantium, culpa est esse corrupti repudiandae eligendi
-                        ullam, debitis enim necessitatibus, expedita modi!</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde velit id tenetur voluptatem.
-                        Aliquam exercitationem soluta possimus accusantium, culpa est esse corrupti repudiandae eligendi
-                        ullam, debitis enim necessitatibus, expedita modi!</p>
-                    <a href="github.com" target="_blank" title="Github"><i class="fab fa-github pr-3 redes"></i></a>
-                    <a href="https://www.linkedin.com/" target="_blank" title="Linkedin"><i
-                            class="fab fa-linkedin-in redes"></i></a>
-                    <a href="files/Cv Rodrigo Zapata.pdf" class="btn btn-rojo ml-5">Descargar mi CV </a>
-                </div>
-                <div class="col-sm-3 col-12 mt-4 offset-sm-2">
-                    <img src="images/foto-perfil-circular.png" alt="" title="" class="img-fluid img-circle">
+    </div>
+    <div class="tecnologias pb-4 pb-sm-5">
+        <section class="container pt-4">
+            <div class="row my-5">
+                <div class="col-12 text-sm-left text-center">
+                    <h2>Tecnologías de programación</h2>
                 </div>
             </div>
-        </div>
-
-
-        <!--Cartas de Tecnologias-->
-
-        <section id="tecnologias" class="color-gradiente">
-            <div class="container pb-5">
-                <div class="row">
-                    <div class="col-12">
-                        <h2 class="my-sm-5 text-white">Tecnologías de programación</h2>
+            <div class="row justify-content-center justify-content-sm-start">
+                <div class="col-sm-2 col-6 px-2 text-center">
+                    <div class="card mb-4 py-3">
+                        <img src="images/javascript.png" alt="">
+                        <p>Javascript</p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-sm-2 col-6">
-                        <div class="px-4 py-5 mt-4 card mx-0 text-center shadow">
-                            <img class="img-fluid d-block mx-auto" width="60" src="images/JS.png">
-                            <h3 class="my-4">Javascript</h3>
-                        </div>
+                <div class="col-sm-2 col-6 px-2 text-center">
+                    <div class="card mb-4 py-3">
+                        <img src="images/php.png" alt="">
+                        <p>PHP</p>
                     </div>
-
-
-                    <div class="col-sm-2 col-6">
-                        <div class="px-4 py-5 mt-4 card mx-0 text-center shadow">
-                            <img class="img-fluid d-block mx-auto" width="60" src="images/php.png">
-                            <h3 class="my-4">PHP</h3>
-                        </div>
+                </div>
+                <div class="col-sm-2 col-6 px-2 text-center">
+                    <div class="card mb-4 py-3">
+                        <img src="images/html5.png" alt="">
+                        <p>HTML5</p>
                     </div>
-
-
-                    <div class="col-sm-2 col-6">
-                        <div class="px-4 py-5 mt-4 card mx-0 text-center shadow">
-                            <img class="img-fluid d-block mx-auto" width="60" src="images/html5.png">
-                            <h3 class="my-4">HTML5</h3>
-                        </div>
+                </div>
+                <div class="col-sm-2 col-6 px-2 text-center">
+                    <div class="card mb-4 py-3">
+                        <img src="images/react-js.png" alt="">
+                        <p>React.js</p>
                     </div>
-
-
-                    <div class="col-sm-2 col-6">
-                        <div class="px-4 py-5 mt-4 card mx-0 text-center shadow">
-                            <img class="img-fluid d-block mx-auto" width="60" src="images/react.png">
-                            <h3 class="my-4">React.js</h3>
-                        </div>
+                </div>
+                <div class="col-sm-2 col-6 px-2 text-center">
+                    <div class="card mb-4 py-3">
+                        <img src="images/jquery.png" alt="">
+                        <p>jQuery</p>
                     </div>
-
-
-                    <div class="col-sm-2 col-6">
-                        <div class="px-4 py-5 mt-4 card mx-0 text-center shadow">
-                            <img class="img-fluid d-block mx-auto" width="60" src="images/1.png">
-                            <h3 class="my-4">jQuery</h3>
-                        </div>
+                </div>
+                <div class="col-sm-2 col-6 px-2 text-center">
+                    <div class="card mb-4 py-3">
+                        <img src="images/bootstrap.png" alt="">
+                        <p>Bootstrap</p>
                     </div>
-
-
-                    <div class="col-sm-2 col-6">
-                        <div class="px-4 py-5 mt-4 card mx-0 text-center shadow">
-                            <img class="img-fluid d-block mx-auto" width="60" src="images/Bootstrap.png">
-                            <h3 class="my-4">Bootstrap</h3>
-                        </div>
+                </div>
+                <div class="col-sm-2 col-6 px-2 text-center">
+                    <div class="card mb-4 py-3">
+                        <img src="images/laravel.png" alt="">
+                        <p>Laravel</p>
                     </div>
-
-                    <div class="col-sm-2 col-6">
-                        <div class="px-4 py-5 mt-4 card mx-0 text-center shadow">
-                            <img class="img-fluid d-block mx-auto" width="60" src="images/2.png">
-                            <h3 class="my-4">Laravel</h3>
-                        </div>
+                </div>
+                <div class="col-sm-2 col-6 px-2 text-center">
+                    <div class="card mb-4 py-3">
+                        <img src="images/maria-db.png" alt="">
+                        <p>MariaDB</p>
                     </div>
-
-
-                    <div class="col-sm-2 col-6">
-                        <div class="px-4 py-5 mt-4 card mx-0 text-center shadow">
-                            <img class="img-fluid d-block mx-auto" width="60" src="images/Maria.png">
-                            <h3 class="my-4">MariaDB</h3>
-                        </div>
+                </div>
+                <div class="col-sm-2 col-6 px-2 text-center">
+                    <div class="card mb-4 py-3">
+                        <img src="images/css.png" alt="">
+                        <p>CSS</p>
                     </div>
-
-
-                    <div class="col-sm-2 col-6">
-                        <div class="px-4 py-5 mt-4 card mx-0 text-center shadow">
-                            <img class="img-fluid d-block mx-auto" width="60" src="images/CSS3.png">
-                            <h3 class="my-4">CSS</h3>
-                        </div>
+                </div>
+                <div class="col-sm-2 col-6 px-2 text-center">
+                    <div class="card mb-4 py-3">
+                        <img src="images/mysql.png" alt="">
+                        <p>MySQL</p>
                     </div>
-
-
-                    <div class="col-sm-2 col-6">
-                        <div class="px-4 py-5 mt-4 card mx-0 text-center shadow">
-                            <img class="img-fluid d-block mx-auto" width="60" src="images/SQL.png">
-                            <h3 class="my-4">MySQL</h3>
-                        </div>
+                </div>
+                <div class="col-sm-2 col-6 px-2 text-center">
+                    <div class="card mb-4 py-3">
+                        <img src="images/apache.png" alt="">
+                        <p>Apache</p>
                     </div>
-
-
-                    <div class="col-sm-2 col-6">
-                        <div class="px-4 py-5 mt-4 card mx-0 text-center shadow">
-                            <img class="img-fluid d-block mx-auto" width="60" src="images/apache.png">
-                            <h3 class="my-4">Apache</h3>
-                        </div>
+                </div>
+                <div class="col-sm-2 col-6 px-2 text-center">
+                    <div class="card mb-4 py-3">
+                        <img src="images/git.png" alt="">
+                        <p>Git</p>
                     </div>
-
-
-                    <div class="col-sm-2 col-6">
-                        <div class="px-4 py-5 mt-4 card mx-0 text-center shadow">
-                            <img class="img-fluid d-block mx-auto" width="60" src="images/Recurso 27.png">
-                            <h3 class="my-4">Git</h3>
-                        </div>
+                </div>
+                <div class="col-sm-2 col-6 px-2 text-center">
+                    <div class="card mb-4 py-3">
+                        <img src="images/heidi-sql.png" alt="">
+                        <p>Heidi SQL</p>
                     </div>
-
-
-                    <div class="col-sm-2 col-6">
-                        <div class="px-4 py-5 mt-4 card mx-0 text-center shadow">
-
-                            <img class="img-fluid d-block mx-auto" width="60" src="images/HS.png">
-                            <h3 class="my-4">Heidi SQL</h3>
-                        </div>
+                </div>
+                <div class="col-sm-2 col-6 px-2 text-center">
+                    <div class="card mb-4 py-3">
+                        <img src="images/sublime-text.png" alt="">
+                        <p>Sublime Text</p>
                     </div>
-
-
-                    <div class="col-sm-2 col-6">
-                        <div class="px-4 py-5 mt-4 card mx-0 text-center shadow">
-                            <img class="img-fluid d-block mx-auto" width="60" src="images/S.png">
-                            <h3 class="my-4">Sublime Text</h3>
-                        </div>
+                </div>
+                <div class="col-sm-2 col-6 px-2 text-center">
+                    <div class="card mb-4 py-3">
+                        <img src="images/xampp.png" alt="">
+                        <p>XAMPP</p>
                     </div>
-
-
-                    <div class="col-sm-2 col-6">
-                        <div class="px-4 py-5 mt-4 card mx-0 text-center shadow">
-                            <img class="img-fluid d-block mx-auto" width="60" src="images/H.png">
-                            <h3 class="my-4">XAMPP</h3>
-                        </div>
+                </div>
+                <div class="col-sm-2 col-6 px-2 text-center">
+                    <div class="card mb-4 py-3">
+                        <img src="images/word.png" alt="">
+                        <p>Word</p>
                     </div>
-
+                </div>
+                <div class="col-sm-2 col-6 px-2 text-center">
+                    <div class="card mb-4 py-3">
+                        <img src="images/excel.png" alt="">
+                        <p>Excel</p>
+                    </div>
                 </div>
             </div>
         </section>
-
-
-        <!--Idiomas y Hobbie-->
-        <section id="idiomas" class="fondo">
-            <div class="container pt-4 pb-4">
-                <div class="row">
-                    <div class="col-6">
-                        <div class="card shadow">
-                            
-
+    </div>
+    <div class="personal">
+        <section class="container pt-4 pb-5">
+            <div class="row justify-content-center mt-5">
+                <div class="col-12 col-md-8 col-lg-6 px-0 m-4 m-sm-0 m-md-4 m-lg-0">
+                    <div class="row mx-2 bg-white">
+                        <div class="col-auto pl-0">
+                            <i class="fas fa-comment-alt p-5 m-0"></i>
                         </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="card shadow">
-
+                        <div class="col-auto align-self-center">
+                            <div class="descr pt-3">
+                                <h3>IDIOMAS</h3>
+                                <p>INGLES - Intermediate B2<br>ESPAÑOL - Nativo</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-        
-        
-        
-        
-        
-    
-        </section>
-
-        <!--Experiencia Laboral-->
-        <section id="experiencia">
-            <div class="container pt-4">
-                <div class="row">
-                    <div class="col-sm-1">
-                        <i class="fas fa-briefcase maletin"></i>
-                    </div>
-                    <div class="col-sm-6 col-12">
-                        <h2>Experiencia laboral</h2>
-                    </div>
-                </div>
-            </div>
-
-            <!--Cartas de Experiencia-->
-            <div class="container pt-4 pb-4">
-                <div class="row">
-                    <div class="col-sm-5 col-12">
-                        <div class="container">
-                            <div class="row card shadow">
-                                <div class="col-sm-4">
-                                    <img src="images/dot.png" class="p-5 img-fluid logo">
-                                </div>
-                                <div class="col-sm-5 ml-5">
-                                    <h3 class="pt-4">Nombre del cargo</h3>
-                                    <p class="text-violet">Nombre de la empresa</p>
-                                    <p>Feb 2016 - PRESENTE</p>
-                                    <div>
-                                        <ul>
-                                            <li>
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                            </li>
-                                            <li>
-                                                Eos cumque debitis, minima inventore quisquam quo consequuntur quia
-                                                quae.
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    
-                                </div>
-                                <div>
-                                    <a href="" class="btn">Ver empresa</a>
-                                </div>
+                <div class="col-12 col-md-8 col-lg-6 px-0 m-4 m-sm-0 m-md-4 m-lg-0">
+                    <div class="row mx-2 bg-white">
+                        <div class="col-auto pl-0">
+                            <i class="fas fa-star p-5 m-0"></i>
+                        </div>
+                        <div class="col-auto align-self-center">
+                            <div class="descr pt-3">
+                                <h3>HOBBIES</h3>
+                                <p>Gimnasio<br>Literatura de Fantasia</p>
                             </div>
-
                         </div>
                     </div>
-
-                    <div class="p-5">
-
-                    </div>
-                    <div class="col-sm-5 col-12">
-                        <div class="container">
-                            <div class="row card shadow">
-                                <div class="col-sm-4">
-                                    <img src="images/dot.png" class="p-5 img-fluid logo">
-                                </div>
-                                <div class="col-sm-5 ml-5">
-                                    <h3 class="pt-4">Nombre del cargo</h3>
-                                    <p class="text-violet">Nombre de la empresa</p>
-                                    <p>Feb 2016 - PRESENTE</p>
-                                    <div>
-                                        <ul>
-                                            <li>
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                            </li>
-                                            <li>
-                                                Eos cumque debitis, minima inventore quisquam quo consequuntur quia
-                                                quae.
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    
-                                </div>
-                                <div>
-                                    <a href="" class="btn">Ver empresa</a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    
                 </div>
             </div>
         </section>
-
-
-            <!--Estudios-->
-        <section id="estudios" class="fondo">
-            <div class="container pt-4">
-                <div class="row">
-                    <div class="col-sm-1">
-                        <i class="fas fa-graduation-cap graduacion"></i>
-                    </div>
-                    <div class="col-sm-6 col-12">
-                        <h2 class="red">Estudios</h2>
-                    </div>
+    </div>
+    <div class="laboral mb-5">
+        <section class="container">
+            <div class="row mt-5 pl-sm-5 title">
+                <div class="col-12 col-sm-2 col-xl-1 align-self-center text-center text-sm-left">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <div class="col-12 col-sm-10 col-xl-11 align-self-center text-center text-sm-left">
+                    <h2 class="m-0 align-self-center">Experiencia laboral</h2>
                 </div>
             </div>
-
-            <!--Cartas de Estudios-->
-            <div class="container pt-4 pb-4">
-                <div class="row">
-                    <div class="col-sm-5 col-12">
-                        <div class="container">
-                            <div class="row card shadow">
-                                <div class="col-sm-4">
-                                    <img src="images/dot.png" class="p-5 img-fluid logo">
-                                </div>
-                                <div class="col-sm-5 ml-5">
-                                    <h3 class="pt-4">Nombre del curso</h3>
-                                    <p class="text-red">DePC</p>
-                                    <p>Feb 2016 - PRESENTE</p>
-                                    <div>
-                                        <ul>
-                                            <li>
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                            </li>
-                                            <li>
-                                                Eos cumque debitis, minima inventore quisquam quo consequuntur quia
-                                                quae.
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    
-                                </div>
-                                <div>
-                                    <a href="" class="btn">Ver empresa</a>
+            <div class="row justify-content-center justify-content-lg-start mt-5">
+                <div class="col-sm-6 col-12 px-0 mb-4 mb-sm-0">
+                    <div class="row mx-2 bg-white">
+                        <div class="col-12 col-sm-3 col-md-4 col-lg-3 pl-sm-0 pt-3 pt-sm-0 text-center">
+                            <b><svg class="bd-placeholder-img rounded-circle mt-sm-4 ml-sm-4" width="100" height="100" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <rect width="100%" height="100%" fill="#fffff"></rect>
+                                <text x="17%" y="57%" fill="white">JN°45</text>
+                            </svg></b>
+                        </div>
+                        <div class="col-12 col-sm-9 col-md-12 col-lg-9 align-self-center">
+                            <div class="descr pt-3">
+                                <h4 class="m-0">Auxiliar Esribiente</h4>
+                                <h5>Juzgado Criminal y Correccional N°45</h5>
+                                <h6 class="my-2">JUL 2018 - DIC 2020</h6>
+                                <ul class="text-left pl-3">
+                                    <li>Atencion de mesa de entradas.</li>
+                                    <li>Redaccion de escritos.</li>
+                                    <li>Remision de expedientes.</li>
+                                </ul>
+                            </div>
+                            <div class="row pr-4 pb-4">
+                                <div class="col-12 text-right">
+                                    <a href="" target="_blank" class="btn px-4 py-2">VER EMPRESA</a>
                                 </div>
                             </div>
-
                         </div>
                     </div>
-
-                    <div class="p-5">
-
-                    </div>
-                    <div class="col-sm-5 col-12">
-                        <div class="container">
-                            <div class="row card shadow">
-                                <div class="col-sm-4">
-                                    <img src="images/dot.png" class="p-5 img-fluid logo">
-                                </div>
-                                <div class="col-sm-5 ml-5">
-                                    <h3 class="pt-4">Nombre del curso</h3>
-                                    <p class="text-red">DePC</p>
-                                    <p>Feb 2016 - PRESENTE</p>
-                                    <div>
-                                        <ul>
-                                            <li>
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                            </li>
-                                            <li>
-                                                Eos cumque debitis, minima inventore quisquam quo consequuntur quia
-                                                quae.
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    
-                                </div>
-                                <div>
-                                    <a href="" class="btn">Ver empresa</a>
+                </div>
+                <div class="col-sm-6 col-12 px-0 d-none">
+                    <div class="row mx-2 bg-white">
+                        <div class="col-12 col-sm-3 col-md-4 col-lg-3 pl-sm-0 pt-3 pt-sm-0 text-center">
+                            <b><svg class="bd-placeholder-img rounded-circle mt-sm-4 ml-sm-4" width="100" height="100" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <rect width="100%" height="100%" fill="#fffff"></rect>
+                                <text x="17%" y="57%" fill="white">LOGO</text>
+                            </svg></b>
+                        </div>
+                        <div class="col-12 col-sm-9 col-md-12 col-lg-9 align-self-center">
+                            <div class="descr pt-3">
+                                <h4 class="m-0">Desarrollador web</h4>
+                                <h5>DePC Suite</h5>
+                                <h6 class="my-2">DIC 2020 - PRESENTE</h6>
+                                <ul class="text-left pl-3">
+                                    <li>Desarrollador web.</li>
+                                    <li style="color: white;"></li>
+                                    <li style="color: white;"></li>
+                                </ul>
+                            </div>
+                            <div class="row pr-4 pb-4">
+                                <div class="col-12 text-right">
+                                    <a href="https://depcsuite.com/?v=d72a48a8ebd2" target="_blank" class="btn px-4 py-2">VER EMPRESA</a>
                                 </div>
                             </div>
-
                         </div>
                     </div>
-
-                    
                 </div>
             </div>
         </section>
-    </main>
+    </div>
+    <div class="estudios py-5">
+        <section class="container">
+            <div class="row mt-sm-5 pl-sm-5 title">
+                <div class="col-12 col-sm-2 col-xl-1 align-self-center text-center text-sm-left">
+                    <i class="fas fa-graduation-cap align-self-center"></i>
+                </div>
+                <div class="col-12 col-sm-10 col-xl-11 pl-sm-4 align-self-center text-center text-sm-left">
+                    <h2 class="m-0 align-self-center">Estudios</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center justify-content-lg-start mt-5">
 
+                <div class="col-sm-6 col-12 px-0 mb-4 mb-sm-0">
+                    <div class="row mx-2 bg-white">
+                        <div class="col-12 col-sm-3 col-md-4 col-lg-3 pl-sm-0 pt-3 pt-sm-0 text-center">
+                            <b><svg class="bd-placeholder-img rounded-circle mt-sm-4 ml-sm-4" width="100" height="100" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <rect width="100%" height="100%" fill="#e20000"></rect>
+                                <text x="17%" y="57%" fill="white"> IMD</text>
+                            </svg></b>
+                        </div>
+                        <div class="col-12 col-sm-9 col-md-12 col-lg-9 align-self-center">
+                            <div class="descr pt-3">
+                                <h4 class="m-0">Secundario</h4>
+                                <h5>Instituto Monseñor Dillon</h5>
+                                <h6 class="my-2">2010 - 2015</h6>
+                                <ul class="text-left pl-3">
+                                    <li>Egresado en "Bachiller en Letras y Ciencias sociales"</li>
+                                </ul>
+                            </div>
+                            <div class="row pr-4 pb-4">
+                                <div class="col-12 text-right">
+                                    <a href="http://www.monsdillon.esc.edu.ar/" target="_blank" class="btn px-4 py-2">VER INSTITUCIÓN</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    <footer>
+                <div class="col-sm-6 col-12 px-0">
+                    <div class="row mx-2 bg-white">
+                        <div class="col-12 col-sm-3 col-md-4 col-lg-3 pl-sm-0 pt-3 pt-sm-0 text-center">
+                            <b><svg class="bd-placeholder-img rounded-circle mt-sm-4 ml-sm-4" width="100" height="100" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <rect width="100%" height="100%" fill="#e20000"></rect>
+                                <text x="17%" y="57%" fill="white">UMai</text> <!-- logo de la unlu -->
+                            </svg></b>
+                        </div>
+                        <div class="col-12 col-sm-9 col-md-12 col-lg-9 align-self-center">
+                            <div class="descr pt-3">
+                                <h4 class="m-0">Universitario</h4>
+                                <h5>Universidad Maimonides</h5>
+                                <h6 class="my-2">MAR 2018 - PRESENTE</h6>
+                                <ul class="text-left pl-3">
+                                    <li>Licenciatura en Tecnologia Multimedial.</li>
+                                    <li style="color: white;"></li>
+                                </ul>
+                            </div>
+                            <div class="row pr-4 pb-4">
+                                <div class="col-12 text-right">
+                                    <a href="https://multimedia.maimonides.edu/videojuegos-2021/?gclid=CjwKCAiA57D_BRAZEiwAZcfCxTz1Y_hi9blGTw44EREg5LFgmO_7TBop_TiYS9qVDgUxisphK5WTBRoCUlcQAvD_BwE" target="_blank" class="btn px-4 py-2">VER INSTITUCIÓN</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-12 px-0 pt-3">
+                    <div class="row mx-2 bg-white">
+                        <div class="col-12 col-sm-3 col-md-4 col-lg-3 pl-sm-0 pt-3 pt-sm-0 text-center">
+                            <b><svg class="bd-placeholder-img rounded-circle mt-sm-4 ml-sm-4" width="100" height="100" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <rect width="100%" height="100%" fill="#e20000"></rect>
+                                <text x="17%" y="57%" fill="white">DePC</text>
+                            </svg></b>
+                        </div>
+                        <div class="col-12 col-sm-9 col-md-12 col-lg-9 align-self-center">
+                            <div class="descr pt-3">
+                                <h4 class="m-0">Curso</h4>
+                                <h5>DePC Suite</h5>
+                                <h6 class="my-2">AGO 2020 - PRESENTE</h6>
+                                <ul class="text-left pl-3">
+                                    <li>Curso de programación web Full Stack.</li>
+                                    <li style="color: white;"></li>
+                                </ul>
+                            </div>
+                            <div class="row pr-4 pb-4">
+                                <div class="col-12 text-right">
+                                    <a href="https://depcsuite.com/?v=d72a48a8ebd2" target="_blank" class="btn px-4 py-2">VER INSTITUCIÓN</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+    <div class="footer">
         <div class="container">
-            <div class="row mt-5">
-                <div class="col-sm-3 col-12 text-sm-left text-center pb-sm-0 pb-3">
-                    <a href="https://github.com" target="_blank" title="Github"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/" target="_blank" title="Linkedin"><i
-                            class="fab fa-linkedin-in"></i></a>
-                </div>
-                <div class="col-sm-3 col-12 text-sm-left text-center pb-sm-0 pb-3">
-                    Sponsor <a href="https://depcsuite.com" target="_blank" title="DEPCSUITE">DePC Suite</a>
-                </div>
-                <div class="col-sm-3 col-12 text-sm-left text-center pb-sm-0 pb-3">
-                    <a href="mailto:rodrigo1998.rz@gmail.com">rodrigo1998.rz@gmail.com</a>
-                </div>
-                <div class="col-sm-3 col-12 text-right">
-                    <a href="https://api.whatsapp.com/send?phone=541168165044" target="_blank" title="Whatsapp"><i
-                            class="fab fa-whatsapp"></i></a>
-                </div>
-
-            </div>
+            <footer class="px-0 pb-sm-3">
+                <?php include_once("footer.php"); ?>
+            </footer>
         </div>
-    </footer>
+    </div>
 </body>
-
 </html>

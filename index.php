@@ -1,100 +1,49 @@
 <?php
-$pg = "Inicio"
+    $pg = "inicio";
 ?>
+
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos</title>
+    <title>Index | Mi portfolio</title>
     <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="css/fontawesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100,200,300,400,500,600,700,800.900&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
-    <script src="css/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="css/bootstrap/js/bootstrap.min.js"></script>
     <script src="css/bootstrap/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body id="index">
-    <header>
-        <div class="container">
-            <nav class="navbar navbar-expand-md px-0">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-                    aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item pr-5">
-                            <a class="nav-link active" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item pr-5">
-                            <a class="nav-link" href="sobre-mi.html">Sobre mí</a>
-                        </li>
-                        <li class="nav-item pr-5">
-                            <a class="nav-link" href="proyectos.html">Proyectos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                    <div class="form-inline my-2 my-lg-0">
-                        <a href="files/Cv Rodrigo Zapata.pdf" target="_blank" class="btn btn-rojo">Descargar mi CV <i class="fas fa-download"></i></a>
+<body id="inicio">
+    <main class="container">
+        <header>
+            <?php include_once("menu.php"); ?>
+        </header>
+        <div class="row bloque-inicio align-items-end justify-content-center">
+            <div class="row justify-content-center">
+                <div class="col-10 mb-3 mb-sm-5">
+                    <div class="row search">
+                        <div class="col-10 col-sm-11 pr-0 align-self-center">
+                            <h1 class="p-2 m-0">Hola mi nombre es <span class="destacado">Rodrigo</span>, soy programador full-stack.</h1>
+                        </div>
+                        <div class="col-1 p-0 m-0 text-center align-self-center border-left">
+                            <i class="fas fa-search ml-2 ml-sm-0 p-sm-2"></i>
+                        </div>
                     </div>
                 </div>
-            </nav>
-        </div>
-    </header>
-
-
-
-
-    <main>
-        <section id="buscador" class="mitad">
-        <div class="container">
-            <div class="row text-center pb-3">
-                <div class="col-12">
-                    <input type="text" name="serch" placeholder="Hola mi nombre es Rodrigo y soy un desarrollador web Full stack|" class="src">
+                <div class="col-12 text-center mb-5">
+                    <a class="btn" href="proyectos.php">MIRÁ MI TRABAJO</a>
                 </div>
             </div>
-            <div class="row text-center">
-                <div class="col-12 pt-5">
-                    <a href="proyectos.html" class="btn">MIRA MI TRABAJO</a>
-
-                </div>
-
-            </div>
         </div>
-        </section>
     </main>
-
-
-
-
-    <footer class="abajo">
-        <div class="container">
-            <div class="row mt-5">
-                <div class="col-sm-3 col-12 text-sm-left text-center pb-sm-0 pb-3">
-                    <a href="https://github.com" target="_blank" title="Github"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-                <div class="col-sm-3 col-12 text-sm-left text-center pb-sm-0 pb-3 blanco">Sponsor <a href="https://depcsuite.com" target="_blank" title="DEPCSUITE">DePC Suite</a>
-                </div>
-                <div class="col-sm-3 col-12 text-sm-left text-center pb-sm-0 pb-3">
-                    <a href="mailto:rodrigo1998.rz@gmail.com">rodrigo1998.rz@gmail.com</a>
-                </div>
-                <div class="col-sm-3 col-12 text-right">
-                    <a href="https://api.whatsapp.com/send?phone=541168165044" target="_blank" title="Whatsapp"><i
-                            class="fab fa-whatsapp"></i></a>
-                </div>
-
-            </div>
-        </div>
+    <footer class="container px-sm-0">
+        <?php include_once("footer.php"); ?>
     </footer>
 </body>
+
 </html>
